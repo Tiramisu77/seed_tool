@@ -5,6 +5,13 @@ const outputs = []
 
 let operation = "encrypt"
 
+async function getWords(){
+let res = await fetch("/english.txt").then(r=>console.log(r))
+}
+                                           
+getWords()
+
+/*
 function readFile(file) {
     let reader = new FileReader();
     let res = new Promise((resolve) => {
@@ -20,7 +27,7 @@ document.querySelector("#file").addEventListener("change", async (e) => {
     let res = await readFile(e.target.files[0])
     words = res.split("\n")
     words.pop()
-})
+}) */
 
 function mod(dividend, divisor) {
     const quotient = Math.floor(dividend / divisor);
