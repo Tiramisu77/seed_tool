@@ -6,7 +6,7 @@ const outputs = []
 let operation = "encrypt"
 
 async function getWords(){
-let res = await fetch("/english.txt").then(r=>console.log(r))
+let res = await fetch("/seed_tool/english.txt").then(r=>console.log(r))
 }
                                            
 getWords()
